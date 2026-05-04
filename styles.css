@@ -1,0 +1,45 @@
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(#6ec5ff, #9be7ff 60%, #c8f7ff);
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+.game-shell {
+  position: relative;
+  width: min(92vw, 420px);
+}
+
+canvas {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+  background: #70c5ce;
+}
+
+.hud {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 14px;
+  font-weight: 700;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.45);
+}
+
+#state {
+  align-self: center;
+  margin-bottom: 8px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 6px 10px;
+  border-radius: 999px;
+}
